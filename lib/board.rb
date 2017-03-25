@@ -1,6 +1,9 @@
 class Board
   attr_accessor :board
   def initialize
+    # things liek this are usually modeled as an array of arrays, which lets you use and manipulate them more
+    # naturally by indices, than by using hardcoded position names. Calculating winning for example would be much easier
+
     @board = {
             :h0 => "   ", :h1 => "  1 ", :h2 => "  2 ", :h3 => "  3 ",
             :ha => " A ",  :a1 => "    ", :a2 => "    ", :a3 => "    ", 
